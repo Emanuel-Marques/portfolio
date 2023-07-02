@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(18,18,21);
+}
+
+#cabecalho{
+    text-align: center;
+    color:#fff;
+}
+
+img#foto{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    background: linear-gradient(#d39e33,#ed5636,#633BBC) padding-box, linear-gradient(#d39e33,#ed5636,#633BBC) border-box;
+}
+
+#menu ul li{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
