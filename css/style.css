@@ -1,12 +1,38 @@
 body{
     background-color: rgb(18,18,21);
+    color:#fff;
 }
 
 #cabecalho{
     text-align: center;
+   
+}
+
+/*Estilização do Menu*/
+#menu{
+    text-align: center;
+}
+#menu ul{
+    list-style: none;
+}
+#menu li{
+    display: inline;
+}
+
+#menu a{
+    padding-right: 10px;
+    text-decoration: none;
     color:#fff;
 }
 
+#menu ul li a:hover{
+    color: #d39e33;
+}
+
+/*Estilizando foto*/
+#picture{
+    display: inline;
+}
 img#foto{
     width: 160px;
     height: 160px;
@@ -15,9 +41,4 @@ img#foto{
     background: linear-gradient(#d39e33,#ed5636,#633BBC) padding-box, linear-gradient(#d39e33,#ed5636,#633BBC) border-box;
 }
 
-#menu ul li{
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-}
 
