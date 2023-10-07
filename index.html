@@ -5,40 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="cabecalho">
-        <h1>Emanuel de Jesus Marques</h1>
-    </div>
-    <div id="menu">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#foto">Foto</a></li>
-            <li><a href="https://www.youtube.com/@dctechangola1781" target="_blank">Youtube</a></li>
-            <li><a href="http://" target="_blank">LinkedIn</a></li>
-            <li><a href="http://www.instagram.com/dario_clenio" target="_blank" >Instagram</a></li>
-        </ul>
-    </div>
-    
-    <div id="picture">
-        <img id="foto" src="./imgs/Copy of IMG_4635.JPG" width="200" height="200" alt="Emanuel Marques dev Junior">
-    </div>
-    <p>
-        Eu sou Emanuel de Jesus Marques, mais conhecido por Dário.
-        Sou angolano, nasci na província de <em>Cabinda</em> e tenho 22 anos de idade
-        Sou apaixonado por tecnologia desde que me conheço como uma pessoa
-        e estou sempre disposto a aprender.
-        Actualmente vivo na cidade do <em>Lobito</em>, na província de <strong>Benguela</strong>.
-    </p>
-
-    <h2>Essas são as minhas habilidades</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li><strong>C#</strong></li>
-        <li>Java</li>
-        <li>JavaScript</li>
-    </ul>
+    <header>
+        <div id="cabecalho">
+            <h1>Emanuel de Jesus Marques</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#foto">Foto</a></li>
+                <li><a href="https://www.youtube.com/@dctechangola1781" target="_blank">Youtube</a></li>
+                <li><a href="http://" target="_blank">LinkedIn</a></li>
+                <li><a href="http://www.instagram.com/dario_clenio" target="_blank" >Instagram</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="picture">
+            <img id="foto" src="./imgs/Copy of IMG_4635.JPG" width="200" height="200" alt="Emanuel Marques dev Junior">
+        </div>
+        <p>
+            Sou Emanuel de Jesus Marques, mais conhecido por <strong>Dário</strong>.
+            Nasci na província de <em>Cabinda</em>, em Angola 🇦🇴, tenho 22 anos de idade.
+            <br>Sou apaixonado por tecnologia desde que me conheço como uma pessoa
+            e estou sempre disposto a aprender.
+            Actualmente vivo na cidade do <em>Lobito</em>, na província de <strong>Benguela</strong>.
+        </p>
+        
+        <section id="habilidades">
+            <h2>Essas são as minhas habilidades</h2>
+            <article class="card">
+                <img src="./imgs/b.png" width="20px" class="controles">
+                <h3>HTML</h3>
+                <img src="./imgs/html-logo.png" width="100">
+            </article>
+            <article class="card">
+                <img src="./imgs/b.png" width="20px" class="controles">
+                <h3>CSS</h3>
+                <img src="./imgs/css-logo.png" width="100">
+            </article>
+            <article class="card">
+                <img src="./imgs/b.png" width="20px" class="controles">
+                <h3>JavaScript</h3>
+                <img src="./imgs/javaScript-logo.png" width="100">
+            </article>
+            <article class="card">
+                <img src="./imgs/b.png" width="20px" class="controles">
+                <h3>MySQL</h3>
+                <img src="./imgs/mysql-logo.png" width="100">
+            </article>
+        </section>
+        
+    </main>
 
 
 </body>
