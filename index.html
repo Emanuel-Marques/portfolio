@@ -8,19 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div id="cabecalho">
-            <h1>Emanuel de Jesus Marques</h1>
+           <h1>Emanuel de Jesus Marques</h1>
         </div>
         <div id="menu">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#foto">Foto</a></li>
-                <li><a href="https://www.youtube.com/@dctechangola1781" target="_blank">Youtube</a></li>
-                <li><a href="http://" target="_blank">LinkedIn</a></li>
-                <li><a href="http://www.instagram.com/dario_clenio" target="_blank" >Instagram</a></li>
+                <li><a href="#about-me">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projects">Projectos</a></li>
+                <li><a href="#social-media" >Contactos</a></li>
             </ul>
         </div>
     </header>
@@ -28,40 +30,66 @@
         <div id="picture">
             <img id="foto" src="./imgs/Copy of IMG_4635.JPG" width="200" height="200" alt="Emanuel Marques dev Junior">
         </div>
-        <p>
-            Sou Emanuel de Jesus Marques, mais conhecido por <strong>Dário</strong>.
-            Nasci na província de <em>Cabinda</em>, em Angola 🇦🇴, tenho 22 anos de idade.
-            <br>Sou apaixonado por tecnologia desde que me conheço como uma pessoa
-            e estou sempre disposto a aprender.
-            Actualmente vivo na cidade do <em>Lobito</em>, na província de <strong>Benguela</strong>.
-        </p>
-        
-        <section id="habilidades">
-            <h2>Essas são as minhas habilidades</h2>
-            <article class="card">
-                <img src="./imgs/b.png" width="20px" class="controles">
-                <h3>HTML</h3>
-                <img src="./imgs/html-logo.png" width="100">
-            </article>
-            <article class="card">
-                <img src="./imgs/b.png" width="20px" class="controles">
-                <h3>CSS</h3>
-                <img src="./imgs/css-logo.png" width="100">
-            </article>
-            <article class="card">
-                <img src="./imgs/b.png" width="20px" class="controles">
-                <h3>JavaScript</h3>
-                <img src="./imgs/javaScript-logo.png" width="100">
-            </article>
-            <article class="card">
-                <img src="./imgs/b.png" width="20px" class="controles">
-                <h3>MySQL</h3>
-                <img src="./imgs/mysql-logo.png" width="100">
-            </article>
+        <section id="about-me">
+            <p>
+                Sou Emanuel de Jesus Marques, mais conhecido por <strong>Dário</strong>.
+                Nasci na província de <em>Cabinda</em>, em Angola 🇦🇴, tenho 22 anos de idade.
+                Actualmente vivo na cidade do <em>Lobito</em>, na província de <strong>Benguela</strong>.
+            </p>
+            <p>
+                Sou apaixonado por tecnologia desde que me conheço como uma pessoa
+                e estou sempre disposto a aprender.
+            </p>
+            <p>
+                Sou estudante de desenvolvimento fullstack da <strong><a href="https://www.betrybe.com/">Trybe</a></strong>
+            </p>
         </section>
         
+        <section id="habilidades">
+            <h2>Minhas habilidades</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="./imgs/b.png" width="20px" class="controles">
+                    <h3>HTML</h3>
+                    <img src="./imgs/html-logo.png" width="100">
+                </article>
+                <article class="card">
+                    <img src="./imgs/b.png" width="20px" class="controles">
+                    <h3>CSS</h3>
+                    <img src="./imgs/css-logo.png" width="100">
+                </article>
+                <article class="card">
+                    <img src="./imgs/b.png" width="20px" class="controles">
+                    <h3>C# </h3>
+                    <img src="./imgs/chsarp-logo.svg" width="100">
+                </article>
+                <article class="card">
+                    <img src="./imgs/b.png" width="20px" class="controles">
+                    <h3>JavaScript</h3>
+                    <img src="./imgs/javaScript-logo.png" width="100">
+                </article>
+                <article class="card">
+                    <img src="./imgs/b.png" width="20px" class="controles">
+                    <h3>MySQL</h3>
+                    <img src="./imgs/mysql-logo.png" width="100">
+                </article>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projectos</h2>
+            <div class="cards">
+            </div>
+        </section>
     </main>
-
-
+    <footer>
+        <p>Contacte-me</p>
+        <div id="social-media">
+            <a href="http://www.instagram.com/dario_clenio" target="_blank" rel="noopener noreferrer"><img src="./imgs/instagram-logo.png" width="20px" alt=""></a>
+            <a href="http://www.instagram.com/dario_clenio" target="_blank" rel="noopener noreferrer"><img src="./imgs/linked-in-logo.png" width="20px" alt=""></a>
+            <a href="https://www.youtube.com/@dctechangola1781" target="_blank" rel="noopener noreferrer"><img src="./imgs/Youtube-logo.png" width="30px" alt=""></a>
+            <a href="https://www.github.com/emanuel-marques" target="_blank" rel="noopener noreferrer"><img src="./imgs/github-logo.png" width="23px" alt=""></a>
+        </div>
+        <p id="copy">&copy; 2023 Todos os direitos reservados à DC Tech Angola</p>
+    </footer>
 </body>
 </html>

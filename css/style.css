@@ -3,17 +3,33 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #13111B;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2e2f33;
+    border-radius: 5px;
+}
 body{
     background-color: #13111B;
     color:#fff;
 }
+
 h3 {
   font-weight: bold;
   font-style: italic;
 }
+
 h1 {
-    font-weight: bold; 
+  font-family: 'Ubuntu', sans-serif;;
+  font-weight: bold; 
 }
+
 #cabecalho{
   text-align: center;
   margin: 20px;
@@ -59,6 +75,19 @@ img#foto:hover {
   transform: scale(1.1);
 }
 
+em {
+  color: #4FFFA0;
+}
+
+p a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;    
+}
+
+p a:hover {
+  color:#4FFFA0;
+}
 .card .controles {
     padding-left: 130px;
 }
@@ -71,10 +100,36 @@ img#foto:hover {
   width: 150px;
   border-radius: 15px;
   padding: 10px;
-  box-shadow: 4px 4px 6px rgb(0, 0, 0) ;
+  box-shadow: 4px 4px 6px rgb(0, 0, 0);
+  transition: background-color 0.7s ease-in-out;
+}
+
+.card:hover {
+    background-color: #4FFFA0;
 }
 
 #habilidades {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
 }
 
+.cards {
+  display: inline-flex;
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+#social-media img{
+  margin: 4px;
+}
+
+#copy {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+}
