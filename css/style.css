@@ -97,7 +97,6 @@ p a:hover {
   margin: 10px;
   align-items: center;
   background-color: #26272D;
-  width: 150px;
   border-radius: 15px;
   padding: 10px;
   box-shadow: 4px 4px 6px rgb(0, 0, 0);
@@ -132,4 +131,61 @@ footer {
   font-family: 'Ubuntu', sans-serif;
   font-weight: lighter;
   font-style: italic;
+}
+
+.card-project {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #26272D;
+  border-radius: 15px;
+  padding: 0;
+  box-shadow: 4px 4px 6px rgb(0, 0, 0);
+  width: 300px;
+}
+
+.card-project img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-project .card-conteudo {
+  margin: 10px;
+}
+
+.line {
+  border: none;
+  border-top: 4px solid #4FFFA0;
+  margin: 8px 0 8px 0;
+  width: 100px;
+}
+
+.card-project h4 {
+  margin: 10px 0 10px 0;
+}
+
+.card-project p {
+  margin: 10px 0 10px 0;
+}
+
+.card-project a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-project a:hover {
+  color: #4FFFA0;
+}
+
+.tags {
+  display: flex;
+}
+
+.tags p {
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-right: 10px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.20);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
 }
