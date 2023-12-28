@@ -189,3 +189,14 @@ footer {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
 }
+
+.social-media-dinamyc {
+  width: 25px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.social-media-dinamyc:hover {
+  width: 200px;
+  background-color: white;
+}
