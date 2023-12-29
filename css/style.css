@@ -122,7 +122,10 @@ p a:hover {
 footer {
   text-align: center;
 }
-
+#social-media {
+  display: flex;
+  justify-content:center;
+}
 #social-media img{
   margin: 4px;
 }
@@ -188,4 +191,17 @@ footer {
   color: rgba(255, 255, 255, 0.20);
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
+}
+
+.social-media-dinamyc {
+  width: 25px;
+  color: white;
+  display: flex;
+  overflow-x: hidden;
+  transition: width 0.7s ease-in-out;
+  margin: 0.2rem;
+}
+
+.social-media-dinamyc:hover {
+  width: 200px;
 }
