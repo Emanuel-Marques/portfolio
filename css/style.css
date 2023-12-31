@@ -206,7 +206,7 @@ footer {
   width: 200px;
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 900px) {
   #about-me {
     padding: 20px;
     text-align: center;
@@ -220,3 +220,4 @@ footer {
     text-align: center;
   }
 }
+
