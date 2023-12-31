@@ -206,7 +206,7 @@ footer {
   width: 200px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 828px) {
   .cards {
     display: flex;
     flex-wrap: wrap;
