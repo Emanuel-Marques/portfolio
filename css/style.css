@@ -206,15 +206,15 @@ footer {
   width: 200px;
 }
 
-@media screen and (max-width: 900px) {
-  #about-me {
-    padding: 20px;
-    text-align: center;
-  }
+@media screen and (min-width: 568px) {
   .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  #about-me {
+    padding: 20px;
+    text-align: center;
   }
   #projects {
     text-align: center;
