@@ -205,3 +205,19 @@ footer {
 .social-media-dinamyc:hover {
   width: 200px;
 }
+
+@media screen and (max-width: 900px) {
+  #about-me {
+    padding: 20px;
+    text-align: center;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #projects {
+    text-align: center;
+  }
+}
+
