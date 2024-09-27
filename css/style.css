@@ -113,7 +113,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 40px;
 }
 
 .main-info h2 {
@@ -170,17 +170,54 @@ h1 {
   animation: typing 2s steps(10) infinite;
   background: #000;
 }
+
 .dinamico li span{
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
   position : relative;
 
 }
+
 @keyframes typing {
   100%{
       left:100%;
       margin: 0 -35px 0 35px;
   }
+}
+
+.main-info h3 {
+  font-size: 1.8em;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#social-media .social-media-dinamyc svg {
+  width: 100%;
+}
+
+#social-media .social-media-dinamyc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid #f9004d;
+  border-radius: 50%;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#social-media .social-media-dinamyc:hover {
+  background-color: #f9004d;
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 /*Estilizando foto*/
@@ -250,13 +287,7 @@ p a:hover {
 footer {
   text-align: center;
 }
-#social-media {
-  display: flex;
-  justify-content: center;
-}
-#social-media img {
-  margin: 4px;
-}
+
 
 #copy {
   font-family: "Ubuntu", sans-serif;
@@ -319,19 +350,6 @@ footer {
   color: rgba(255, 255, 255, 0.2);
   font-family: "Ubuntu", sans-serif;
   font-weight: 100;
-}
-
-.social-media-dinamyc {
-  width: 25px;
-  color: white;
-  display: flex;
-  overflow-x: hidden;
-  transition: width 0.7s ease-in-out;
-  margin: 0.2rem;
-}
-
-.social-media-dinamyc:hover {
-  width: 200px;
 }
 
 @media screen and (max-width: 828px) {
