@@ -1,23 +1,33 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   width: 8px;
 }
 
-::-webkit-scrollbar-track{
-  background-color: #13111B;
+::-webkit-scrollbar-track {
+  background-color: #13111b;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #2e2f33;
-    border-radius: 5px;
+  background-color: #2e2f33;
+  border-radius: 5px;
 }
-body{
-    background-color: #13111B;
-    color:#fff;
+
+body {
+  background-color: #13111b;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
 }
 
 h3 {
@@ -26,49 +36,82 @@ h3 {
 }
 
 h1 {
-  font-family: 'Ubuntu', sans-serif;;
-  font-weight: bold; 
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-#cabecalho{
+#cabecalho {
   text-align: center;
   margin: 20px;
 }
 
+#cabecalho h1 span {
+  color: #f9004d;
+}
+
 /*Estilização do Menu*/
-#menu{
-    text-align: center;
+#menu {
+  text-align: center;
 }
-#menu ul{
-    list-style: none;
+#menu ul {
+  list-style: none;
 }
-#menu li{
-    display: inline;
-}
-
-#menu a{
-    padding-right: 10px;
-    text-decoration: none;
-    color:#fff;
+#menu li {
+  display: inline;
 }
 
-#menu ul li a:hover{
-    color: #4FFFA0;
+#menu a {
+  font-family: "Josefin Sans", sans-serif;
+  padding-right: 1.8em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#menu ul li a:hover {
+  color: #f9004d;
+}
+
+.logo-curriculum {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-curriculum:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.logo-curriculum a {
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #f9004d;
+}
+
+.logo-curriculum a:hover {
+  background-color: #dd1c56;
+  cursor: pointer;
 }
 
 /*Estilizando foto*/
-#picture{
+#picture {
   display: flex;
   margin: 20px;
   justify-content: center;
 }
-img#foto{
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 4px solid transparent;
-    background: linear-gradient(#d39e33,#ed5636,#633BBC) padding-box, linear-gradient(#d39e33,#ed5636,#633BBC) border-box;
-    transition: transform 0.3s ease-in-out;
+img#foto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
+    linear-gradient(#d39e33, #ed5636, #633bbc) border-box;
+  transition: transform 0.3s ease-in-out;
 }
 
 img#foto:hover {
@@ -76,27 +119,27 @@ img#foto:hover {
 }
 
 em {
-  color: #4FFFA0;
+  color: #4fffa0;
 }
 
 p a {
   text-decoration: none;
   cursor: pointer;
-  color: white;    
+  color: white;
 }
 
 p a:hover {
-  color:#4FFFA0;
+  color: #4fffa0;
 }
 .card .controles {
-    padding-left: 130px;
+  padding-left: 130px;
 }
 .card {
   display: flex;
   flex-direction: column;
   margin: 10px;
   align-items: center;
-  background-color: #26272D;
+  background-color: #26272d;
   border-radius: 15px;
   padding: 10px;
   box-shadow: 4px 4px 6px rgb(0, 0, 0);
@@ -104,7 +147,7 @@ p a:hover {
 }
 
 .card:hover {
-    background-color: #4FFFA0;
+  background-color: #4fffa0;
 }
 
 #habilidades {
@@ -124,14 +167,14 @@ footer {
 }
 #social-media {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
-#social-media img{
+#social-media img {
   margin: 4px;
 }
 
 #copy {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: lighter;
   font-style: italic;
 }
@@ -140,7 +183,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  background-color: #26272D;
+  background-color: #26272d;
   border-radius: 15px;
   padding: 0;
   box-shadow: 4px 4px 6px rgb(0, 0, 0);
@@ -158,7 +201,7 @@ footer {
 
 .line {
   border: none;
-  border-top: 4px solid #4FFFA0;
+  border-top: 4px solid #4fffa0;
   margin: 8px 0 8px 0;
   width: 100px;
 }
@@ -177,7 +220,7 @@ footer {
 }
 
 .card-project a:hover {
-  color: #4FFFA0;
+  color: #4fffa0;
 }
 
 .tags {
@@ -188,8 +231,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.25);
   margin-right: 10px;
   border-radius: 5px;
-  color: rgba(255, 255, 255, 0.20);
-  font-family: 'Ubuntu', sans-serif;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "Ubuntu", sans-serif;
   font-weight: 100;
 }
 
@@ -220,4 +263,3 @@ footer {
     text-align: center;
   }
 }
-
