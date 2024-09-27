@@ -220,6 +220,37 @@ h1 {
   cursor: pointer;
 }
 
+/* Sobre mim */
+#about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191919;
+  padding: 50px 150px 0 150px;
+}
+
+#about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#about-info h1{
+  font-size: 3rem;
+}
+
+#about-info p{
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#about-info h2 span {
+  color: #f9004d;
+}
+
+
 /*Estilizando foto*/
 #picture {
   display: flex;
