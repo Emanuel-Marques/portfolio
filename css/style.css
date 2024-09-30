@@ -300,19 +300,30 @@ p a:hover {
 }
 
 .card:hover {
-  background-color: #4fffa0;
+  background-color: #f9004d;
+  cursor: pointer;
 }
 
+/* Secção habilidades */
 #habilidades {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  background-color: #000;
+  padding: 50px 150px 0 150px;
+}
+
+#habilidades h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  color: #f9004d;
 }
 
 .cards {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   margin: 10px;
+  justify-content: center;
 }
 
 footer {
