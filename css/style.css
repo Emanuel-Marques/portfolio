@@ -337,6 +337,21 @@ footer {
   font-style: italic;
 }
 
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191919;
+  padding: 50px 150px 0 150px;
+  gap: 1.4rem;
+}
+
+#projects h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  color: #fff;
+}
+
 .card-project {
   display: flex;
   flex-direction: column;
@@ -346,6 +361,11 @@ footer {
   padding: 0;
   box-shadow: 4px 4px 6px rgb(0, 0, 0);
   width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-project:hover {
+  transform: scale(1.1);
 }
 
 .card-project img {
@@ -359,7 +379,7 @@ footer {
 
 .line {
   border: none;
-  border-top: 4px solid #4fffa0;
+  border-top: 4px solid #f9004d;
   margin: 8px 0 8px 0;
   width: 100px;
 }
@@ -378,7 +398,7 @@ footer {
 }
 
 .card-project a:hover {
-  color: #4fffa0;
+  color: #f9004d;
 }
 
 .tags {
@@ -392,6 +412,12 @@ footer {
   color: rgba(255, 255, 255, 0.2);
   font-family: "Ubuntu", sans-serif;
   font-weight: 100;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
 }
 
 @media screen and (max-width: 828px) {
