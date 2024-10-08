@@ -23,11 +23,7 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #000;
+  
 }
 
 h3 {
@@ -53,6 +49,11 @@ h1 {
 /*Estilização do Menu*/
 #menu {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
 }
 #menu ul {
   list-style: none;
@@ -61,7 +62,7 @@ h1 {
   display: inline;
 }
 
-#menu a {
+#menu li a {
   font-family: "Josefin Sans", sans-serif;
   padding-right: 1.8em;
   text-decoration: none;
@@ -96,6 +97,18 @@ h1 {
 .logo-curriculum a:hover {
   background-color: #dd1c56;
   cursor: pointer;
+}
+
+#burger {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.open {
+  display: block;
 }
 
 /* Seção de boas vindas */
@@ -433,4 +446,58 @@ footer {
   #projects {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 790px) {
+  .logo-curriculum {
+    display: none; 
+  }
+
+  #burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  #burger:hover{
+    color: #f9004d;
+  }
+
+  #menu ul {
+    display: none;
+  }
+
+  .menu-mobile {
+    background-color: #191919;
+    /* transition: transform 0.7s ease-in-out; */
+  }
+
+  .menu-mobile.open {
+    //transform: translateY(-10%);
+  }
+
+  .menu-mobile ul {
+    list-style: none;
+  }
+  .menu-mobile li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .menu-mobile li a {
+    font-family: "Josefin Sans", sans-serif;
+    padding-right: 1.8em;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .menu-mobile ul li a:hover {
+    color: #f9004d;
+  }
+
+  
 }

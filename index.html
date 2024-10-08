@@ -22,13 +22,16 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <header>
-      <div id="cabecalho">
-        <h1>Emanuel <span>Marques</span></h1>
-      </div>
+      
       <nav id="menu">
+        <div id="cabecalho">
+          <h1>Emanuel <span>Marques</span></h1>
+        </div>
         <ul>
           <li><a href="#">Inicio</a></li>
           <li><a href="#about-me">Sobre mim</a></li>
@@ -36,15 +39,34 @@
           <li><a href="#projects">Projectos</a></li>
           <li><a href="#social-media">Contactos</a></li>
         </ul>
+        <div class="logo-curriculum">
+          <a
+            href="resources/Super Currículo - Emanuel-Marques - total.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          Meu Currículo
+          </a>
+        </div>
+        <i id="burger" class="material-icons">
+          menu
+        </i>
       </nav>
-      <div class="logo-curriculum">
-        <a
-          href="resources/Super Currículo - Emanuel-Marques - total.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Meu Currículo
-        </a>
+      <div class="menu-mobile">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#about-me">Sobre mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projects">Projectos</a></li>
+          <li><a href="#social-media">Contactos</a></li>
+          <li><a
+            href="resources/Super Currículo - Emanuel-Marques - total.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          Meu Currículo
+          </a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -314,5 +336,6 @@
     <footer>
       <p id="copy">&copy; 2024 Todos os direitos reservados à Emanuel Marques</p>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
