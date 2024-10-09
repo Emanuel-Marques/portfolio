@@ -266,17 +266,16 @@ h1 {
 
 /*Estilizando foto*/
 #picture {
-  display: flex;
-  margin: 20px;
+  display: none;
   justify-content: center;
 }
 img#foto {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 4px solid transparent;
-  background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
-    linear-gradient(#d39e33, #ed5636, #633bbc) border-box;
+  background: linear-gradient(#f9004d, #f9004d, #f9004d) padding-box,
+    linear-gradient(#f9004d, #f9004d, #f9004d) border-box;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -452,6 +451,9 @@ footer {
 
 @media screen and (max-width: 790px) {
 
+  #picture {
+    display: block;
+  }
   .logo-curriculum {
     display: none; 
   }
