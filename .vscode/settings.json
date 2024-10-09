@@ -1,4 +1,3 @@
 {
-    
-    "css.styleSheets": ["css/*.css"]
+    "css.styleSheets": ["**/css/*.css"]
 }
