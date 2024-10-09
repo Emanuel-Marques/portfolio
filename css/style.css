@@ -23,11 +23,7 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #000;
+  
 }
 
 h3 {
@@ -53,6 +49,11 @@ h1 {
 /*Estilização do Menu*/
 #menu {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
 }
 #menu ul {
   list-style: none;
@@ -61,7 +62,7 @@ h1 {
   display: inline;
 }
 
-#menu a {
+#menu li a {
   font-family: "Josefin Sans", sans-serif;
   padding-right: 1.8em;
   text-decoration: none;
@@ -83,7 +84,7 @@ h1 {
   cursor: pointer;
 }
 
-.logo-curriculum a {
+.btn a {
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   color: #fff;
@@ -93,9 +94,21 @@ h1 {
   background-color: #f9004d;
 }
 
-.logo-curriculum a:hover {
+.btn a:hover {
   background-color: #dd1c56;
   cursor: pointer;
+}
+
+#burger {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.open {
+  display: block;
 }
 
 /* Seção de boas vindas */
@@ -152,8 +165,8 @@ h1 {
   position: relative;
   top:0 ;
   animation: slide 6s steps(1) infinite;
-  
 }
+
 @keyframes slide {
   100%{
       top:-360px;
@@ -284,9 +297,11 @@ p a {
 p a:hover {
   color: #4fffa0;
 }
+
 .card .controles {
   padding-left: 130px;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -432,5 +447,131 @@ footer {
   }
   #projects {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 790px) {
+
+  .logo-curriculum {
+    display: none; 
+  }
+
+  #burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  #burger:hover{
+    color: #f9004d;
+  }
+
+  #menu ul {
+    display: none;
+  }
+
+  .menu-mobile {
+    background-color: #191919;
+    /* transition: transform 0.7s ease-in-out; */
+  }
+
+  .menu-mobile.open {
+    //transform: translateY(-10%);
+  }
+
+  .menu-mobile ul {
+    list-style: none;
+  }
+  .menu-mobile li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .menu-mobile li a {
+    font-family: "Josefin Sans", sans-serif;
+    padding-right: 1.8em;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .menu-mobile ul li a:hover {
+    color: #f9004d;
+  }
+
+  .picture-about-me {
+    display: none;
+  }
+
+  #about-me {
+    text-align: left;
+    padding: 20px;
+  }
+
+  #about-info {
+    padding-bottom: 20px;
+  }
+
+  #habilidades {
+    padding: 50px 20px;
+  }
+
+  .cards {
+    margin: 5px;
+  }
+
+  #projects {
+    padding: 50px 20px;
+  }
+
+  .main-picture {
+    display: none;
+  }
+
+  .main-info {
+    padding: 200px 20px;
+    gap: 20px;
+  }
+
+  .main-info h2 {
+    font-size: 2.5em;
+  }
+  
+  .dinamico{
+    line-height: 2.5em;
+    height: 40px;
+  }
+  
+  .dinamico li{
+    font-size: 2.5em;
+    animation: slide 6s steps(1) infinite;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+  #welcome {
+    padding: 20px;
+  }
+
+  .estatico h2 {
+    font-size: 2em;
+  }
+
+  .dinamico{
+    line-height: 2em;
+    height: 40px;
+  }
+  
+  .dinamico li{
+    font-size: 2em;
+    animation: slide 6s steps(1) infinite;
+  }
+
+  #welcome h3 {
+    font-size: 1.5em;
   }
 }
